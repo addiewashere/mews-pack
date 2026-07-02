@@ -1,0 +1,28 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "block/spongebob2",
+		"particle": "block/spongebob2"
+	},
+	"elements": [
+		{
+			"from": [-8, 0, 8],
+			"to": [24, 32, 8],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, 0, 6]},
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#0"},
+				"east": {"uv": [0, 0, 0, 16], "texture": "#0"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#0"},
+				"west": {"uv": [0, 0, 0, 16], "texture": "#0"},
+				"up": {"uv": [0, 0, 16, 0], "texture": "#0"},
+				"down": {"uv": [0, 0, 16, 0], "texture": "#0"}
+			}
+		}
+	],
+	"display": {
+		"gui": {
+			"translation": [-0.5, -4, 0],
+			"scale": [0.5, 0.5, 0.5]
+		}
+	}
+}

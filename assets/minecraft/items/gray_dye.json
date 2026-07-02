@@ -1,0 +1,40 @@
+{
+  "model": {
+    "type": "select",
+    "property": "custom_model_data",
+    "fallback": {
+      "type": "model",
+      "model": "item/gray_dye"
+    },
+    "cases": [
+      {
+        "when": "candy1",
+        "model": {
+          "type": "model",
+          "model": "item/candy1"
+        }
+      },
+      {
+        "when": "candy2",
+        "model": {
+          "type": "model",
+          "model": "item/candy2"
+        }
+      },
+      {
+        "when": "candy3",
+        "model": {
+          "type": "model",
+          "model": "item/candy3"
+        }
+      },
+      {
+        "when": "candy4",
+        "model": {
+          "type": "model",
+          "model": "item/candy4"
+        }
+      }
+    ]
+  }
+}

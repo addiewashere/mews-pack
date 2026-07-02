@@ -1,0 +1,26 @@
+{
+  "model": {
+    "type": "select",
+    "property": "custom_model_data",
+    "fallback": {
+      "type": "model",
+      "model": "item/apple"
+    },
+    "cases": [
+      {
+        "when": "grannysmith",
+        "model": {
+          "type": "model",
+          "model": "item/grannysmith"
+        }
+      },
+      {
+        "when": "caramel",
+        "model": {
+          "type": "model",
+          "model": "item/caramel_apple"
+        }
+      }
+    ]
+  }
+}

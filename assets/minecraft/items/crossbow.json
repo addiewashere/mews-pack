@@ -1,0 +1,75 @@
+{
+  "model": {
+    "type": "minecraft:condition",
+    "on_false": {
+      "type": "minecraft:select",
+      "cases": [
+        {
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/shotgun_loaded"
+          },
+          "when": "arrow"
+        },
+        {
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/shotgun_loaded"
+          },
+          "when": "rocket"
+        }
+      ],
+      "fallback": {
+        "type": "minecraft:model",
+        "model": "minecraft:item/crossbow"
+      },
+      "property": "minecraft:charge_type"
+    },
+    "on_true": {
+      "type": "minecraft:range_dispatch",
+      "entries": [
+        {
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/shotgun_load_0"
+          },
+          "threshold": 0
+        },
+        {
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/shotgun_load_1"
+          },
+          "threshold": 0.2
+        },
+        {
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/shotgun_load"
+          },
+          "threshold": 0.3
+        },
+        {
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/shotgun_load_shell"
+          },
+          "threshold": 0.5
+        },
+        {
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/shotgun_load"
+          },
+          "threshold": 0.9
+        }
+      ],
+      "fallback": {
+        "type": "minecraft:model",
+        "model": "minecraft:item/crossbow"
+      },
+      "property": "minecraft:crossbow/pull"
+    },
+    "property": "minecraft:using_item"
+  }
+}

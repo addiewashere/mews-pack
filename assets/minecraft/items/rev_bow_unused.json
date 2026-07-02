@@ -1,0 +1,19 @@
+{
+  "model": {
+    "type": "select",
+    "property": "display_context",
+    "fallback": {
+      "type": "model",
+      "model": "item/revolver"
+    },
+    "cases": [
+      {
+        "when": "gui",
+        "model": {
+          "type": "model",
+          "model": "item/revolver_gui"
+        }
+      }
+    ]
+  }
+}
